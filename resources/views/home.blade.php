@@ -37,4 +37,27 @@
             </div>
         </div>
     </section>
+    <section class="p-10">
+        <h1 class="font-bold text-gray-100 lg:text-3xl md:text-xl sm:text-lg my-3 text-center mb-8">Our most popular courses</h1>
+        <div class="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {{-- Brok, ini nanti kasih top 3 courses berdasarkan review terbaik yaw. --}}
+            @for ($i = 0; $i < 3; $i++)
+                <a href="#" class="bg-white p-8 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl relative group overflow-hidden">
+                    <img src="{{ url('/images/header_image.jpg') }}" alt="" class="rounded-md transition-transform duration-300">
+                    <div class="absolute inset-0 bg-[#dbd0f3] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="relative z-10">
+                        <h1 class="group-hover:font-extrabold font-bold pt-3 transition-colors duration-300">Course {{ $i+1 }}</h1>
+                        <h1 class="group-hover:font-semibold text-gray-400 pb-3 transition-colors duration-300">Taikez</h1>
+                        <p class="group-hover:text-gray-900 transition-colors duration-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam cumque, reiciendis similique consectetur quam officia nisi provident aspernatur voluptatem quas voluptatum obcaecati dolorum? Enim suscipit voluptates repellat voluptatem porro.</p>
+                    </div>
+                </a>
+            @endfor
+        </div>
+        <div class="text-center">
+            <button
+                class="rounded-lg border text-[#4d3462] bg-[#c8a5e6] px-5 py-2 font-semibold mt-8 transition-transform transform hover:scale-105 hover:bg-[#b78cd9] hover:text-white hover:shadow-lg">
+                View all courses
+            </button>
+        </div>
+    </section>
 </x-layout>

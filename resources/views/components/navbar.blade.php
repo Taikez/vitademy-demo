@@ -10,7 +10,7 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "", Default: "text-gray-300 hover:bg-[#201332] hover:text-white" -->
                         <x-nav-link href="/" :isActive="request()->is('/')">Home</x-nav-link>
-                        <x-nav-link href="/courses" :isActive="request()->is('courses')">Courses</x-nav-link>
+                        <x-nav-link href="/courses" :isActive="request()->is('courses')">Ecosystem</x-nav-link>
                         <x-nav-link href="/contact" :isActive="request()->is('contact')">Contact</x-nav-link>
                         <x-nav-link href="/about" :isActive="request()->is('about')">About</x-nav-link>
                     </div>
